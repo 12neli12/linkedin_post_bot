@@ -30,8 +30,8 @@ class LinkedinPostBot:
         time.sleep(5)
 
         post = self.driver.find_element(
-            By.XPATH,
-            value='/html/body/div[6]/div[3]/div/div/div[2]/div/div/main/div[1]/div[2]/div[2]/button'
+            By.CSS_SELECTOR,
+            value='#ember32'
         )
         post.click()
         time.sleep(2)
